@@ -87,16 +87,16 @@ async function sendAuthEmail(user) {
     });
 
     const mailContent = {
-        from: `Bank Hapoalim <${process.env.EMAIL_SENDER_ADDRESS}>`, // Set a nice "from" address
+        from: `Apex Bank <${process.env.EMAIL_SENDER_ADDRESS}>`, // Set a nice "from" address
         to: user.email, // Recipient's email
         subject: 'Confirm your email address', // Subject line
         html: `
             <h1>Hello ${user.name},</h1>
-            <p>Thank you for registering at Bank Hapoalim.</p>
+            <p>Thank you for registering at Apex Bank.</p>
             <p>Please confirm your email address by clicking the link below:</p>
             <a href="http://localhost:8000/api/auth/verify?userId=${user._id}">Confirm Email</a>
             <p>If you did not request this, please ignore this email.</p>
-            <p>Best regards,<br>Bank Hapoalim Team</p>
+            <p>Best regards,<br>Apex Bank Team</p>
         `,
     };
 

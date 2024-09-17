@@ -1,5 +1,5 @@
 {
-    "name": "bank_server",
+    "name": "apex_bank",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
