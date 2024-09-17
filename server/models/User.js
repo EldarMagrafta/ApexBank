@@ -12,6 +12,6 @@ const userSchema = new mongoose.Schema({
     },
 }, {timestamps: true}); // Enables `createdAt` and `updatedAt` timestamps
 
-console.log("hello david");
+console.log("hello eldar");
 
 module.exports = mongoose.model('User', userSchema);
